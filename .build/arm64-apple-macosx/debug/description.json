@@ -1,0 +1,228 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Mastermind-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources",
+      "importPath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Mastermind",
+      "moduleOutputPath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule",
+      "objects" : [
+        "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Mastermind_main",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mastermindswift_api"
+      ],
+      "outputFileMapPath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift"
+      ],
+      "tempsPath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Mastermind" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Mastermind",
+      "-package-name",
+      "mastermindswift_api",
+      "-incremental",
+      "-c",
+      "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift",
+      "-I",
+      "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Mastermind_main",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mastermindswift_api",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Mastermind" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources"
+    },
+    "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist"
+    },
+    "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList"
+    },
+    "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Mastermind-arm64-apple-macosx15.0-debug.module": ["<Mastermind-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Mastermind-arm64-apple-macosx15.0-debug.module>","<mastermind-arm64-apple-macosx15.0-debug.exe>"]
+  "mastermind-arm64-apple-macosx15.0-debug.exe": ["<mastermind-arm64-apple-macosx15.0-debug.exe>"]
+  "test": ["<Mastermind-arm64-apple-macosx15.0-debug.module>","<mastermind-arm64-apple-macosx15.0-debug.exe>"]
+default: "main"
+nodes:
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind":
+    is-mutated: true
+commands:
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources"]
+    description: "Write auxiliary file /Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources"
+
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist"]
+    description: "Write auxiliary file /Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist"
+
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList"
+
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<Mastermind-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule"]
+    outputs: ["<Mastermind-arm64-apple-macosx15.0-debug.module>"]
+
+  "<mastermind-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<mastermind-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<mastermind-arm64-apple-macosx15.0-debug.exe>"]
+
+  "C.Mastermind-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule"]
+    description: "Compiling Swift Module 'Mastermind' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Mastermind","-emit-dependencies","-emit-module","-emit-module-path","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule","-output-file-map","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/output-file-map.json","-incremental","-c","@/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/sources","-I","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx12.0","-enable-batch-mode","-index-store-path","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Mastermind_main","-parse-as-library","-color-diagnostics","-swift-version","5","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","mastermindswift_api"]
+
+  "C.mastermind-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList"]
+    outputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/mastermind"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug","-o","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind","-module-name","mastermind","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_Mastermind_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind.product/Objects.LinkFileList","-target","arm64-apple-macosx12.0","-Xlinker","-add_ast_path","-Xlinker","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Modules/Mastermind.swiftmodule","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/Library/Developer/Frameworks"]
+
+  "C.mastermind-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist"]
+    outputs: ["<mastermind-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/mastermind"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind-entitlement.plist","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/mastermind"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Package.swift","/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

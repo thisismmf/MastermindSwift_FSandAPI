@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/master.swiftdeps"
+  },
+  "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/Sources/Mastermind/main.swift": {
+    "dependencies": "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.d",
+    "object": "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swift.o",
+    "swiftmodule": "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/mohammadmahdi/Documents/Mobile Programming/MastermindSwift_API/.build/arm64-apple-macosx/debug/Mastermind.build/main.swiftdeps"
+  }
+}
